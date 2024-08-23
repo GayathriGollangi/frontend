@@ -1,0 +1,17 @@
+/* tag selector */
+img{
+    height: 320px;
+    width: 320px;
+}
+/* id selector */
+#heading{
+    background-color: aqua;
+}
+/* class selector */
+.description{
+    background-color: #ed9191;
+}
+/* universal selector */
+*{
+    text-align: center;
+}
