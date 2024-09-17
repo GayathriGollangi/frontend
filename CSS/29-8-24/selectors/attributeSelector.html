@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute selector</title>
+    <style>
+        a[target="_self"]{
+            color: red;
+        }
+        a[href='https://www.youtube.com/']{
+            color: blue;
+            font-size: 25px;
+        }
+        input[type='submit']{
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.youtube.com/">youtube</a>
+    <a href="https://www.youtube.com/shorts/j6hv7Jcm5XQ" target="_self">short</a>
+    <input type="submit">
+</body>
+</html>
