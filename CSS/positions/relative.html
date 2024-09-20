@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative</title>
+    <style>
+        .container>div{
+            height: 100px;
+            width: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        #blue{
+            background-color: blue;
+            position: relative;
+            left: 100px;
+        }
+        #red{
+            background-color: rgb(169, 13, 47);
+        }
+        #green{
+            background-color: rgb(190, 202, 29);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="red">1</div>
+        <div id="green">2</div>
+        <div id="blue">3</div>
+
+    </div>
+</body>
+</html>
