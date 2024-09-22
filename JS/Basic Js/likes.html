@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>likes and Unlikes</title>
+</head>
+<body>
+    <h1 id="count">0</h1>
+    <button id="like" onclick="likeCount()">Like</button>
+    <button id="unlike" onclick="unLikeCount()">unLike</button>
+</body>
+</html>
+<script>
+    let likeEle = document.getElementById('like');
+    let count = 0;
+    function likeCount(){
+        let countEle = document.getElementById("count");
+        count++;
+        countEle.innerText = count;
+    }
+    let unlikeEle = document.getElementById('unlike');
+    function unLikeCount(){
+        let countEle = document.getElementById("count");
+        count--;
+        countEle.innerText = count;
+    }
+
+</script>

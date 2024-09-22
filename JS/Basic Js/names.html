@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>names</title>
+</head>
+<body>
+    <p id="firstname">hello</p>
+    <p id="lastname">Welcome</p>
+    <p id="fullname">JS</p>
+    <button onclick="getFirstName()">FirstName</button>
+    <button onclick="getlastName()">LastName</button>
+    <button onclick="getFullName()">Full Name</button>
+    <button onclick="getResetDefault()">Reset Default</button>
+</body>
+</html>
+
+<script>
+    let firstNameEle = document.getElementById("firstname");
+    let lastNameEle = document.getElementById("lastname");
+    let fullnameEle = document.getElementById("fullname");
+    function getFirstName(){
+        firstNameEle.innerText = "Sam";
+    }
+    function getlastName(){
+        lastNameEle.innerText = "Ruth"
+    }
+    function getFullName(){
+        fullnameEle.innerText = "Sam Ruth";
+    }
+    function getResetDefault(){
+        firstNameEle.innerText = "hello";
+        lastNameEle.innerText="Welcome";
+        fullnameEle.innerText = "JS"
+    }
+</script>
