@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query selector</title>
+</head>
+<body>
+    <p>p1</p>
+    <div id="heading">Javascript</div>
+    <h1 class="head">Frontend</h1>
+    <p>p2</p>
+</body>
+</html>
+<script>
+   let ptag= document.querySelector("p");
+   console.log(ptag);
+
+   let h1Ele = document.querySelector(".head");
+   console.log(h1Ele);
+
+   let divEle = document.querySelector("#heading")
+   console.log(divEle);
+
+</script>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElement by class name</title>
+</head>
+<body>
+    <h1 id="head1">heading</h1>
+    <h2 class="head2">Javascript</h2>
+    <p class="head2">Happy learning</p>
+    <div class="head2">Hello</div>
+</body>
+</html>
+<script>
+    let h1 = document.getElementById("head1");
+    console.log(h1);
+    let classCollection = document.getElementsByClassName("head2");
+    console.log(classCollection);
+    //in this classCollection data will be stored in the form of array.
+    for(let i=0;i<classCollection.length;i++){
+        console.log(classCollection[i]);
+    }
+</script>
