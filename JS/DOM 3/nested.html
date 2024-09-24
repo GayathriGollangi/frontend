@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>creating nested elements in Js </title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let bodyEle = document.querySelector("body");
+    //creating a parent element
+    let parentBox = document.createElement("div");
+
+    //adding id to the div element
+    parentBox.setAttribute("id","container");
+    let div1 = document.createElement("div");
+    
+    //adding content to the element
+    div1.innerText = "I am div1";
+    
+    let div2 = document.createElement("div");
+    div2.innerText = "I am div2";
+   
+    let div3 = document.createElement("div");
+    div3.innerText = "I am div3";
+
+    //append the child to parent
+    parentBox.append(div1,div2,div3);
+    bodyEle.append(parentBox);
+</script>

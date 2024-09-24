@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let buttonObj = [
+        {textContent:"primary",color:"white",bgColor:"blue"},
+        {textContent:"secondary",color:"white",bgColor:"grey"},
+        {textContent:"danger",color:"white",bgColor:"red"},
+        {textContent:"warning",color:"white",bgColor:"orange"},
+    ]
+    buttonObj.map(function(element){
+        let btn = document.createElement("button");
+        btn.textContent = element.textContent;
+        btn.style.color = element.color;
+        btn.style.backgroundColor = element.bgColor;
+        document.querySelector("body").append(btn);
+    })
+</script>

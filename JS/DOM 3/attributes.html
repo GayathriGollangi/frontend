@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attributes</title>
+    <style>
+        .image:hover{
+            height: 400px;
+            width: 400px;
+            cursor: pointer;
+            border-radius: 15px;
+        }
+    </style>
+  </head>
+  <body></body>
+</html>
+<script>
+  let bodyEle = document.querySelector("body");
+  let imgEle = document.createElement("img");
+  imgEle.setAttribute(
+    "src",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDYTidcu_a5cM1W_01Ru37gy9IjeG3UOiq5g&s"
+  );
+  imgEle.setAttribute("alt","image");
+  imgEle.setAttribute("class",'image')
+  bodyEle.append(imgEle);
+</script>
