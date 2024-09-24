@@ -16,9 +16,6 @@ A simple web-based calculator that performs basic arithmetic operations: additio
 - CSS
 - JavaScript
 
-## Demo
-
-To see the calculator in action, open `index.html` in your web browser.
 
 
 
