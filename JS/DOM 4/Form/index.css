@@ -1,0 +1,49 @@
+div{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    font-family: 'Times New Roman', Times, serif;
+}
+form{
+    width: 30%;
+    border: 1px solid black;
+    padding: 30px;
+}
+
+label{
+    font-size: 20px;
+}
+input[type="text"],input[type="number"],select{
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+input[type="submit"]{
+    width: 100%;
+    background-color: lightcoral;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+table{
+    border-collapse: collapse;
+    width: 60%;  
+}
+table th,table td{
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+
+}
+table th{
+    background-color: lightcoral;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
