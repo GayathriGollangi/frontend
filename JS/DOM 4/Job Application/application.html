@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applications</title>
+    <link rel="stylesheet" href="./application.css">
+</head>
+<body>
+    <nav>
+        <div><a href="./index.html">Home</a></div>
+        <div><a href="./application.html">Applications</a></div>
+        <div><a href="./bookmarks.html">Bookmarks</a></div>
+    </nav>
+    <!-- sort by names -->
+     <div>
+     <select id="sortNames" onchange="handleNames()">
+        <option value="">sort by Names</option>
+        <option value="asc">Ascending</option>
+        <option value="dsc">Descending</option>
+     </select>
+     <!-- sort by salary -->
+      <select id="sortSalary" onchange="handleSalary()">
+        <option value="">sort by salary</option>
+        <option value="HTL">High to low</option>
+        <option value="LTH">Low to High</option>
+      </select>
+      <!-- filter category -->
+       <select id="filterRole">
+        <option value="backend">backend</option>
+        <option value="JFSD">JFSD</option>
+        <option value="fronted">frontend</option>
+       </select>
+    </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>JobApplied</th>
+                    <th>Salary</th>
+                    <th>BookMark</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    
+</body>
+</html>
+<script src="./application.js"></script>
