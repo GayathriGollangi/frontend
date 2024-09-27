@@ -29,7 +29,7 @@ This web application allows users to submit details about items, including the i
 
 | Item Name | Quantity | Quality  |
 |-----------|----------|----------|
-| Apple     | 10       | Good     |
-| Banana    | 5        | Average  |
-| Orange    | 3        | Poor     |
+| Apple     | 10       | High     |
+| Banana    | 5        | Medium  |
+| Orange    | 3        | Low     |
 
