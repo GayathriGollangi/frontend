@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slide show</title>
+</head>
+<style>
+    img{
+        height: 500px;
+        width: 100%;
+    }
+</style>
+<body>
+    <h1>Show</h1>
+    <div id="container">
+       
+    </div>
+    <button onclick="start()">start</button>
+    <button onclick="stop()">stop</button>
+</body>
+</html>
+<script>
+let images =[
+    "./1_files/1.jpg",
+    "./1_files/2.jpg",
+    "./1_files/3.jpg",
+    "./1_files/4.jpg"
+]
+
+let id;
+function start(){
+    
+    let slideImage = document.createElement("img");
+   let i =0;
+    id = setInterval(function(){
+        if(i== images.length){
+        i=0;
+    }
+    
+    slideImage.src = images[i++];
+    document.querySelector("#container").append(slideImage);
+},2000)
+}
+function stop(){
+   
+    clearInterval(id);
+    document.querySelector("#container").innerHTML = "";
+}
+</script>
