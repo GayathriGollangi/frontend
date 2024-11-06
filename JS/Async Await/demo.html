@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async/Await</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    // async function
+    async function myFunction() {
+        let newPromise = new Promise((resolve, reject) => {
+             setTimeout(()=>{
+                reject("Hello, Error!");
+             },1000)
+        })
+        let res = await newPromise;
+        return res;
+    }
+    myFunction()
+    .then((result)=>{
+        console.log(result);
+    })
+    .catch((error)=>{
+        console.log(error);
+    })
+</script>
