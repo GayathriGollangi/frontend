@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>method in Object</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    function studentDetails(firstName,lastName){
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.print = function(){
+            console.log(this.firstName+" "+this.lastName);
+        };
+    }
+    let student1 = new studentDetails("Sam","K");
+    console.log(student1);
+</script>

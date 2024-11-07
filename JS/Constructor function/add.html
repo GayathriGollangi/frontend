@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add properties</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let student1 = {
+        name: "sam",
+        age:20,
+        
+    };
+    let student2 = {
+        name: "john",
+        age:21,
+        
+    };
+    let student3 = {
+        name: "jane",
+        age:23
+    };
+    function addStudentDetails(place,state){
+        this.place = place;
+        this.district = state;
+
+    }
+    addStudentDetails.call(student1,"Vizag","Andhra pradesh");
+    console.log(student1);
+
+    addStudentDetails.apply(student2,["hyderabad","telangana"]);
+    console.log(student2);
+
+    let update = addStudentDetails.bind(student3,"vzm","AP");
+    update();
+    console.log(student3);
+</script>

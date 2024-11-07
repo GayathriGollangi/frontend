@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Constructor function</title>
+</head>
+<body>
+    <h1>Constructor function</h1>
+</body>
+</html>
+<script>
+    function studentDetails(name,age,place){
+        this.name =name;
+        this.age = age;
+        this.place = place;
+    }
+    let student1 = new studentDetails("sam",25,"Hyderabad");
+    console.log(student1);
+</script>
