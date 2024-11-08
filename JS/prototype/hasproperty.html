@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hasOwnProperty</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let grandFather ={
+        lastName:"Devil",
+        age:75,
+        bloodgroup:"o+"
+    };
+    let father = Object.create(grandFather);
+    father.name = "Kevin";
+    let son = Object.create(father);
+    
+    son.firstName="John";
+    console.log(son.hasOwnProperty("bloodgroup"));
+
+</script>

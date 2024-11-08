@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prototype</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let grandFather ={
+        lastName:"Devil",
+        age:75,
+        bloodgroup:"o+"
+    };
+    let father = Object.create(grandFather);
+    father.name = "Kevin";
+    
+
+    // console.log(father);
+    let son = Object.create(father);
+    // console.log(son.bloodgroup);
+    son.firstName="John";
+    // console.log(son);
+
+    console.log(son.__proto__);
+    console.log(son.__proto__.__proto__);
+    console.log(son.__proto__.__proto__.__proto__);
+    console.log(son.__proto__.__proto__.__proto__.__proto__); //null
+
+
+
+</script>
