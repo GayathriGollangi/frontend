@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Debounce</title>
+</head>
+<body>
+    <input type="text" oninput="onSearchInput()">
+</body>
+</html>
+<script>
+    function debounce(func,delay){
+        let timeOutId;
+        return function(arg){
+            clearTimeout(timeOutId);
+            timeOutId = setTimeout(()=>{
+                func(arg);
+            },delay);
+        }
+    }
+    function fetchData(query){
+        console.log(`data ${query}`);
+    }
+    let debounceData = debounce(fetchData,2000);
+    function onSearchInput(){
+        const query = event.target.value;
+        debounceData(query);
+
+    }
+</script>
