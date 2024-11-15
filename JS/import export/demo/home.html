@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        .main{
+            width: 100%;
+            background-color: black;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        a{
+            text-decoration: none;
+            font-size: 30px;
+            margin-right: 30px;
+            padding: 10px;
+            color: #f0f0f0;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="main">
+        
+            <a href="home.html">Home</a>
+            <a href="cart.html">Cart</a>
+            <a href="payment.html">Payment</a>
+        
+    </div> -->
+</body>
+</html>
+
+<script type="module">
+import exportedNavbar from '../component/navbar.js';
+let body = document.querySelector("body");
+body.innerHTML = exportedNavbar();
+</script>
