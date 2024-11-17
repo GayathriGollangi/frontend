@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#navbar{
+    /* margin-left: 10%; */
+    margin: 1% 10% 0 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo{
+    flex: 2;
+    display: flex;
+    justify-content: center;
+}
+#logo img{
+    height: 80px;
+    width: 80px;
+    background-color: white;
+}
+#search{
+    flex: 2;
+}
+#options{
+    flex: 3;
+}
+#post{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#post div{
+    margin: 1%;
+    text-align: center;
+}
+#post div :hover{
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+}
+#posted_images{
+    height: 250px;
+    width: 250px;
+}

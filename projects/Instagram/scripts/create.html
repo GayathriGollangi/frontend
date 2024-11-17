@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>create</title>
+    <link rel="stylesheet" href="create.css">
+</head>
+<body>
+    <div id="navbar"></div>
+        
+    <div id="container">
+        <div>
+            <h3>Addpost</h3>
+            <input type="text" id="title" placeholder="enter title" />
+            <input type="file" id="input_image" accept="image/png, image/jpeg" />
+            <button id="submit_btn">submit</button>
+        </div>
+        <div>
+            <h3>Delete post</h3>
+            <input type="text" id="delete_id" placeholder="enter your id">
+            <button id="delete_btn" onclick="deletePost()">delete</button>
+        </div>
+        <div>
+            <h3>Update post</h3>
+            <input type="text" id="update_id" placeholder="enter your id">
+            <input type="text" id="update_title" placeholder="enter new title">
+            <button id="update_btn" onclick="updatePost()">update</button>
+        </div>
+        <div>
+            <h3> post</h3>
+            <input type="text" id="replace_id" placeholder="enter your id">
+            <input type="text" id="replace_title" placeholder="enter new title">
+
+            <button id="replace_btn" onclick="replacePost()">Replace</button>
+        </div>
+    </div>
+</body>
+</html>
+<script src="./create.js" type="module"></script>

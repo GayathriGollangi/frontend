@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#navbar{
+    /* margin-left: 10%; */
+    margin: 1% 10% 0 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo img{
+    height: 80px;
+    width: 80px;
+    background-color: white;
+}
+
+#container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+#container div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1% 0 1% 0;
+}
+#container div button{
+    height: 50px;
+    width: 60px;
+    margin:0 0 0 2%;
+    border-radius: 5px;
+}
+input[type="text"]{
+    font-size: 20px;
+    /* border: none; */
+}
