@@ -1,0 +1,12 @@
+:root{
+    --padding:10px;
+    --border:none;
+}
+.App{
+    text-align:left;
+    font-size: 20px;
+    color:white;
+    margin:10px;
+    padding:var(--padding);
+    border:var(--border)
+}
