@@ -1,0 +1,25 @@
+.container{
+    text-align:center;
+}
+button{
+    margin: 10px;
+    padding:5px;
+    
+}
+.addbtn{
+    width:30px;
+
+}
+.subbtn{
+    width:30px;
+}
+.doublebtn{
+    width:60px;
+}
+
+h1{
+    color:red;
+}
+p{
+    font-size:30px;
+}

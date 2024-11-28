@@ -1,0 +1,38 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    width:30%;
+    padding:10px;
+}   
+.image{
+    width:200px;
+    height:200px;
+    border-radius:200px;
+    background-color:#5dade2;
+}
+.post{
+    display:flex;
+    flex-direction:row;
+    padding:10px;
+    margin:10px;
+}
+.details{
+    margin-left:30px;
+}
+h3{
+    font-weight:bold;
+    font-size:20px;
+}
+.post>div{
+    margin:10px;
+}
+h1{
+    color:#16a085;
+}
+button{
+    margin-top:100px;
+    height:30px;
+    width:70px;
+    border-radius:10px;
+}
