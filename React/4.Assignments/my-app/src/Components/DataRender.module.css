@@ -1,0 +1,26 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    font-familt:Roboto;
+    
+}
+.container-items{
+    border:1px solid #0e02ed;
+    padding:5px;
+    border-radius:10px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+.container-items:hover{
+    border:5px solid  #ccb3ff;
+}
+
+img{
+    height:350px;
+    width:250px;
+    margin:5px;
+}
