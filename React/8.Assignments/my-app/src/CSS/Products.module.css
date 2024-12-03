@@ -1,0 +1,22 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+h3{
+    text-align:center;
+    font-size:40px;
+}
+h4{
+    text-align:center;
+    font-size:25px;
+}
+.card{
+    padding:10px;
+    margin:10px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    border-radius:10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}

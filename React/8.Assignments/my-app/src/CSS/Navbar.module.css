@@ -1,0 +1,11 @@
+.container{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    font-family:"serif";
+}
+.links{
+    text-decoration:none;
+    font-size:30px;
+    color: #8c1aff;
+}
