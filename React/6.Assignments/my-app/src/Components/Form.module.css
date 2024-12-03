@@ -1,0 +1,61 @@
+.names{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    gap:15px;
+}
+.container{
+    width: 60%;
+    margin:auto; 
+    margin-top:100px;
+    font-family:Roboto;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+form{
+    border: 2px solid #e8eaea;
+    padding:10px;
+}
+input[type="email"]{
+    width:100%;
+}
+.phones{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items:center;
+    gap:15px;
+}
+.phone{
+    width: 50%;
+
+}
+select{
+    width:50%;
+    padding:10px;
+}
+option{
+    width:100%;
+}
+.details{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    gap:10px;
+
+}
+input[type="date"]={
+    width:50%;
+}
+.submit-btn{
+    background-color: green;
+    width:100%;
+ 
+    color:white;
+    padding:10px;
+    border:none;
+    margin:5px;
+}
