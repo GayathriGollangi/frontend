@@ -1,6 +1,10 @@
 import React from 'react'
 import { NavLink } from 'react-router'
 import style from '../CSS/Navbar.module.css'
+import Products from '../Pages/Products';
+import Login from '../Pages/Login';
+import { GlobalContext } from '../Context/AuthContextProvider';
+
 
 const links=[
     {
@@ -27,6 +31,8 @@ const links=[
 ];
 
 const Navbar = () => {
+    const {isAuth,login,logout} = GlobalContext();
+    
     const defaultStyle={
         color:"black"
       }
@@ -40,16 +46,16 @@ const Navbar = () => {
         {
             links.map((link,index)=>{
                 return (
-                <NavLink className={style.links} to={link.path} key={index} style={({isActive})=>{
-                    return isActive ? activeStyle : defaultStyle
-                }}>
-                    {link.text}
-                </NavLink>);
-
+                    <NavLink to={link.path} key={index} style={({isActive})=>{
+                        return isActive ? activeStyle : defaultStyle
+                    }}>
+                        {link.text}
+                    </NavLink>);
+    
 })}
-        {/* <p>user Logged in</p>
-        <button>Logout</button>
-     */}
+        {
+            isAuth ? <Products/> : <Login/>
+        }
     
     </div>
   )
