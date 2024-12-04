@@ -1,8 +1,7 @@
 import React from 'react'
-import { NavLink } from 'react-router'
+import { Link, NavLink } from 'react-router'
 import style from '../CSS/Navbar.module.css'
-import Products from '../Pages/Products';
-import Login from '../Pages/Login';
+
 import { GlobalContext } from '../Context/AuthContextProvider';
 
 
@@ -38,7 +37,7 @@ const Navbar = () => {
       }
     
       const activeStyle={
-        color:"green"
+        color:"#a569bd"
       }
   return (
     <div style={{display:"flex",gap:"10px"}} className={style.container}>
@@ -46,7 +45,7 @@ const Navbar = () => {
         {
             links.map((link,index)=>{
                 return (
-                    <NavLink to={link.path} key={index} style={({isActive})=>{
+                    <NavLink className={style.links} to={link.path} key={index} style={({isActive})=>{
                         return isActive ? activeStyle : defaultStyle
                     }}>
                         {link.text}
@@ -54,7 +53,8 @@ const Navbar = () => {
     
 })}
         {
-            isAuth ? <Products/> : <Login/>
+            isAuth ? <Link to="/products"/>
+: <Link to="/login" onClick={login}>Login</Link>
         }
     
     </div>

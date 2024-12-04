@@ -5,6 +5,7 @@ import About from '../Pages/About';
 import Contact from '../Pages/Contact';
 import Login from '../Pages/Login';
 import Products from '../Pages/Products';
+import PrivateRoute from './PrivateRoute';
 
 
 const AllRoutes = () => {
@@ -14,7 +15,13 @@ const AllRoutes = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path='/login' element={<Login/>}/>
+        
+
+        <Route path='/login' element={
+          <PrivateRoute>
+          <Login/>
+          </PrivateRoute>}/>
+        
         <Route path='/products' element={<Products/>}/>
       </Routes>
     </div>
