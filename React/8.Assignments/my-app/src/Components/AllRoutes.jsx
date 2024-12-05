@@ -18,11 +18,14 @@ const AllRoutes = () => {
         
 
         <Route path='/login' element={
-          <PrivateRoute>
+          
           <Login/>
-          </PrivateRoute>}/>
+          }/>
         
-        <Route path='/products' element={<Products/>}/>
+        <Route path='/products' element={
+          <PrivateRoute>
+        <Products/>
+        </PrivateRoute>}/>
       </Routes>
     </div>
   )

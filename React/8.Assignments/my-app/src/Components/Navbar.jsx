@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router'
 import style from '../CSS/Navbar.module.css'
+import { useNavigate } from "react-router";
+
 
 import { GlobalContext } from '../Context/AuthContextProvider';
 
@@ -39,6 +41,8 @@ const Navbar = () => {
       const activeStyle={
         color:"#a569bd"
       }
+      let navigate = useNavigate();
+
   return (
     <div style={{display:"flex",gap:"10px"}} className={style.container}>
       
@@ -54,7 +58,7 @@ const Navbar = () => {
 })}
         {
             isAuth ? <Link to="/products"/>
-: <Link to="/login" onClick={login}>Login</Link>
+: navigate("/login")
         }
     
     </div>
