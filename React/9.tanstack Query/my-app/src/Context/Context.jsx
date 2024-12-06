@@ -1,4 +1,5 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
+
 
 export const AppContext = createContext();
 
@@ -18,7 +19,10 @@ export const AppProvider = ({children})=>{
         setIsDarkTheme(!isDarkTheme);
         localStorage.setItem("darkMode",isDarkTheme);
     }
+    useEffect(()=>{
+        document.body.classList.toggle("dark-theme",isDarkTheme);
 
+    },[isDarkTheme])
     return(
         <AppContext.Provider value={{isDarkTheme,toggleDarkTheme}}>
             {children}
