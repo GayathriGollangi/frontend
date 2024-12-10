@@ -12,7 +12,17 @@ const todoReducerFunction = (state,action)=>{
         switch(action.type){
             case "ADD_TASK":
                 return [...state,{id:Date.now(),text:action.payload,status:false}]
+            case "DELETE_TASK":
+                return state.filter(todo => todo.id !== action.payload)
+                  
+            case "UPDATE_TASK":
+              return state.map((task)=>
+                task.id === action.payload ? {...task,status: !task.status} : task
+              );
+            default:
+              return state;
         }
+
 }
 
 const Todo = () => {
@@ -20,10 +30,11 @@ const Todo = () => {
     const addTask = (text)=>{
         dispatch({type:"ADD_TASK",payload:text})
     }
-    const updateTask = ()=>{
-
+    const updateTask = (id)=>{
+        dispatch({type:"UPDATE_TASK",payload:id})
     }
-    const deleteTask = ()=>{
+    const deleteTask = (id)=>{
+      dispatch({type:"DELETE_TASK",payload:id})
 
     }
   return (
@@ -34,7 +45,7 @@ const Todo = () => {
         {
             todos.map((todo)=>{
                 return(
-                    <TodoItem key={todo.id} {...todo} updateTask ={updateTask} deleteTask={deleteTask}/>
+                    <TodoItem key={todo.id} todo={todo} updateTask ={updateTask} deleteTask={deleteTask}/>
                 )
             })
         }
