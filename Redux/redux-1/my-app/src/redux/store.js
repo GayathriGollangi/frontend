@@ -1,9 +1,11 @@
-import {legacy_createStore} from 'react-redux'
+import {legacy_createStore} from 'redux'
+import {reducerFunction} from "./reducer"
 
 const initialState = {
     count:0,
+    todo:[],
+    cart:[],
 }
 
-const store = legacy_createStore(reducerFunction,initialState);
+export const store = legacy_createStore(reducerFunction,initialState);
 
-export default store
