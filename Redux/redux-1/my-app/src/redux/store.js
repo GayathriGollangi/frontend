@@ -1,4 +1,4 @@
-import {legacy_createStore} from 'redux'
+import { legacy_createStore as createStore } from 'redux'
 import {reducerFunction} from "./reducer"
 
 const initialState = {
@@ -7,5 +7,5 @@ const initialState = {
     cart:[],
 }
 
-export const store = legacy_createStore(reducerFunction,initialState);
+export const store = createStore(reducerFunction,initialState);
 
