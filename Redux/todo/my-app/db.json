@@ -1,0 +1,16 @@
+{
+  "todos": [
+    {
+      "id": "1",
+      "title": "A new todo"
+    },
+    {
+      "title": "redux",
+      "id": "ekB3XVH"
+    },
+    {
+      "title": "redux",
+      "id": "ZTCEmuk"
+    }
+  ]
+}
