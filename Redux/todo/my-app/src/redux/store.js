@@ -1,5 +1,5 @@
 import { reducerFunction } from "./reducer";
-import {legacy_createStore} from 'redux'
+import { legacy_createStore } from "redux";
 
  const initialState = {
     todo: [],

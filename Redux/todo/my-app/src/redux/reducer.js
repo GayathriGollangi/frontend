@@ -18,7 +18,10 @@ export const reducerFunction = (state, { type, payload }) => {
         ...state,
         isLoading: false,
         isError: false,
-        todo: [...state, payload],
+        todo: [...state.todo, payload],
       };
+      default:
+        return state;
+  
   }
 };

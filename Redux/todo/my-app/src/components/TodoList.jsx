@@ -10,7 +10,7 @@ const TodoList = () => {
   // const loading = useSelector((store)=>store.isLoading);
   // const error = useSelector((store)=>store.isError);
   const getTodo = ()=>{
-    dispatch(todoRequestAction);
+    dispatch(todoRequestAction());
     axios.get("http://localhost:3000/todos")
     .then(response => {
       console.log(response.data);
@@ -18,7 +18,7 @@ const TodoList = () => {
     })
       .catch(error => {
         console.error(error);
-        dispatch(todoFailureAction);
+        dispatch(todoFailureAction());
         });
   }
   useEffect(()=>{
