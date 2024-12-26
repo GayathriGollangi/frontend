@@ -2,13 +2,13 @@ import axios from 'axios'
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { todoFailureAction, todoRequestAction, todoSuccessAction } from '../action';
-import {store} from '../redux/store.js'
+
 const TodoList = () => {
   const dispatch = useDispatch();
-  const todo = useSelector((store)=>store);
+  const { todo, isLoading, isError } = useSelector((store) => store);
   console.log(todo);
-  const loading = useSelector((store)=>store.isLoading);
-  const error = useSelector((store)=>store.isError);
+  // const loading = useSelector((store)=>store.isLoading);
+  // const error = useSelector((store)=>store.isError);
   const getTodo = ()=>{
     dispatch(todoRequestAction);
     axios.get("http://localhost:3000/todos")
@@ -27,6 +27,9 @@ const TodoList = () => {
   return (
     <div>
 TodoList
+<h1>Todos</h1>
+      {isLoading && <h1>Loading....</h1>}
+      {isError && <h1>Error....</h1>}
     
     </div>
   )
