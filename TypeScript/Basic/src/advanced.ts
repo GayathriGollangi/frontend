@@ -11,3 +11,19 @@ function getInfo<Type>(value:Type){
 }
 getInfo<number>(1234);
 getInfo<string>("hello");
+
+interface user2 {
+    name: string;
+    age: number;
+
+}
+interface Admin extends user2 {
+    role: string;
+
+}
+let obj : Admin ={
+    name: "John",
+    age: 25,
+    role: "admin"
+
+}
