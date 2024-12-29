@@ -17,3 +17,13 @@ let database : Array<userObj>=[
 let numStr : number | string | boolean = 123;
 numStr = false
 numStr = "123"
+
+type user = {name:string,id:string,address:string}
+type admin ={role:string}
+const John : user & admin={
+    name:"John",
+    id:"123",
+    address:"NY",
+    role:"admin",
+
+}
