@@ -13,3 +13,7 @@ let database : Array<userObj>=[
     {name:"Jane",age:25},
     
 ]
+//union and intersection
+let numStr : number | string | boolean = 123;
+numStr = false
+numStr = "123"
