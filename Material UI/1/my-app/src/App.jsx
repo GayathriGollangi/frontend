@@ -4,7 +4,9 @@ import Button from '@mui/material/Button'
 const App = () => {
   return (
     <div>
-      <Button variant='contained'>Hello</Button>
+      <Button variant='contained' color='secondary'>Hello</Button>
+      <Button variant="contained" color='error' >Warning</Button>
+
     </div>
   )
 }
