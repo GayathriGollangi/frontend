@@ -27,6 +27,13 @@ const App = () => {
       >
         This is error
       </p>
+      <Button sx={{
+        borderColor:(theme)=>theme.typography.h1.color,
+        borderStyle:"solid",
+        borderWidth:"5px"
+      }}>
+        button
+      </Button>
     </div>
   );
 };
